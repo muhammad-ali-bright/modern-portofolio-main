@@ -20,8 +20,7 @@ const Home = () => {
             exit="hidden"
             className="h1"
           >
-            Transforming Ideas <br /> Into{" "}
-            <span className="text-accent">Digital Reality</span>
+            Senior Software Engineer
           </motion.h1>
 
           {/* subtitle */}
@@ -32,10 +31,14 @@ const Home = () => {
             exit="hidden"
             className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16"
           >
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate,
-            exercitationem harum, quia nulla temporibus deleniti libero veniam
-            vero beatae numquam ducimus illum ab similique ipsam tempore fugit
-            quod laudantium debitis.
+            Full Stack Developer with 9 years of experience across a broad spectrum of technologies including JavaScript, 
+            TypeScript, React, Angular, Vue.js, and Node.js. Expertise in backend frameworks like Laravel and Express.js, alongside 
+            solid proficiency in database systems such as MongoDB, MySQL, and PostgreSQL. Versatile in cloud platforms like 
+            AWS and Azure, and highly skilled in microservices architecture and containerization using Docker and Kubernetes. 
+            Adept in frontend development, implementing scalable UIs with React, Redux, and Tailwind, while also skilled in writing 
+            automated tests using Cypress, Jest, and Mocha. Experienced in CI/CD pipelines with Jenkins and Docker, following 
+            agile practices, SOLID principles, and leveraging tools like Jira and Trello. Knowledgeable in blockchain technologies 
+            such as Solidity, Web3.js, and Truffle, and driven by continuous learning and adapting to evolving industry trends. 
           </motion.p>
 
           {/* btn */}
@@ -66,7 +69,7 @@ const Home = () => {
         <ParticlesContainer />
 
         {/* avatar */}
-        <motion.div
+        {/* <motion.div
           variants={fadeIn("up", 0.5)}
           initial="hidden"
           animate="show"
@@ -75,7 +78,7 @@ const Home = () => {
           className="w-full h-full max-w-[737px] max-h-[678px] absolute -bottom-32 lg:bottom-0 lg:right-[8%]"
         >
           <Avatar />
-        </motion.div>
+        </motion.div> */}
       </div>
     </div>
   );
