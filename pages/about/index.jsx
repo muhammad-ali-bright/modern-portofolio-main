@@ -66,6 +66,7 @@ import {
 import Avatar from "../../components/Avatar";
 import Circles from "../../components/Circles";
 import { fadeIn } from "../../variants";
+import { BsDownload } from "react-icons/bs";
 
 //  data
 export const aboutData = [
@@ -143,7 +144,7 @@ export const aboutData = [
           { icon: FaJira, title: "JIRA" },
           { icon: SiSolid, title: "SOLID" },
           { icon: FaTrello, title: "TRELLO" },
-          { icon: FaWater, title: "WATER" },
+          { icon: FaWater, title: "WATERFALL" },
         ],
       },
       {
@@ -189,6 +190,16 @@ export const aboutData = [
 const About = () => {
   const [index, setIndex] = useState(0);
 
+  const confirmDownloadCV = () => {
+    if (window.confirm("Are you sure you want to download the CV?")) {
+      const link = document.createElement("a");
+      link.href = "/MuhammadAli.pdf";
+      link.download = "/MuhammadAli.pdf";
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    }
+  };
   return (
     <div className="h-full bg-primary/30 py-32 text-center xl:text-left">
       <Circles />
@@ -310,7 +321,7 @@ const About = () => {
           initial="hidden"
           animate="show"
           exit="hidden"
-          className="flex flex-col w-full xl:max-w-[48%] h-[480px]"
+          className="flex flex-col w-full xl:max-w-[48%]"
         >
           <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4">
             {aboutData.map((item, itemI) => (
@@ -356,6 +367,19 @@ const About = () => {
             ))}
             <Tooltip id="devicon-tooltip" />
           </div>
+          <button
+            className="btn rounded-full border border-white/50 px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent group mt-2 mb-28 lg:mb-0"
+            onClick={confirmDownloadCV}
+          >
+            <span className="group-hover:-translate-y-[120%] group-hover:opacity-0 transition-all duration-500">
+              Download CV
+            </span>
+
+            <BsDownload
+              className="-translate-y-[120%] opacity-0 group-hover:flex group-hover:-translate-y-0 group-hover:opacity-100 transition-all duration-300 absolute text-[22px]"
+              aria-hidden
+            />
+          </button>
         </motion.div>
       </div>
     </div>
