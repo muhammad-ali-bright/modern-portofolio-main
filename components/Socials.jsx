@@ -6,10 +6,16 @@ import {
   RiFacebookLine,
   RiDribbbleLine,
   RiGithubLine,
+  RiLinkedinLine,
   RiPinterestLine,
 } from "react-icons/ri";
 
 export const socialData = [
+  {
+    name: "LinkedIn", // Add LinkedIn data
+    link: "https://www.linkedin.com/in/muhammad-ali-2ab68b354",
+    Icon: RiLinkedinLine,
+  },
   {
     name: "Github",
     link: "https://github.com/muhammad-ali-bright",

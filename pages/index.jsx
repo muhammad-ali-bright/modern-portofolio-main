@@ -20,8 +20,8 @@ const Home = () => {
             exit="hidden"
             className="h1"
           >
-            Transforming Ideas <br /> Into{" "}
-            <span className="text-accent">Digital Reality</span>
+            Transforming Code <br /> Into{" "}
+            <span className="text-accent">Seamless Digtal Experiences</span>
           </motion.h1>
 
           {/* subtitle */}
@@ -32,10 +32,8 @@ const Home = () => {
             exit="hidden"
             className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16"
           >
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate,
-            exercitationem harum, quia nulla temporibus deleniti libero veniam
-            vero beatae numquam ducimus illum ab similique ipsam tempore fugit
-            quod laudantium debitis.
+           Turning complex challenges into fast, scalable, and secure web applications using React, Node.js, AWS, and more.<br/>
+           From frontend finesse with React, Angular, and Vue to backend strength in Node, .NET, and Laravel — I craft full-stack solutions with real impact.
           </motion.p>
 
           {/* btn */}
@@ -66,7 +64,7 @@ const Home = () => {
         <ParticlesContainer />
 
         {/* avatar */}
-        <motion.div
+        {/* <motion.div
           variants={fadeIn("up", 0.5)}
           initial="hidden"
           animate="show"
@@ -75,7 +73,7 @@ const Home = () => {
           className="w-full h-full max-w-[737px] max-h-[678px] absolute -bottom-32 lg:bottom-0 lg:right-[8%]"
         >
           <Avatar />
-        </motion.div>
+        </motion.div> */}
       </div>
     </div>
   );
