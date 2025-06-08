@@ -29,8 +29,7 @@ const Work = () => {
               exit="hidden"
               className="mb-4 max-w-[400px] mx-auto lg:mx-0"
             >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
-              tempora eligendi, quisquam tempore sint reiciendis.
+              Over the past 9 years, I've built full-stack applications using React, Node.js, .NET, and AWS—solving real-world problems with clean, scalable code. From designing modern UIs to architecting cloud-native systems, I turn ideas into functional, production-ready solutions.
             </motion.p>
           </div>
 

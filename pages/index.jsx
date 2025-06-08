@@ -20,7 +20,8 @@ const Home = () => {
             exit="hidden"
             className="h1"
           >
-            Senior Software Engineer
+            Transforming Code <br /> Into{" "}
+            <span className="text-accent">Seamless Digtal Experiences</span>
           </motion.h1>
 
           {/* subtitle */}
@@ -31,14 +32,8 @@ const Home = () => {
             exit="hidden"
             className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16"
           >
-            Full Stack Developer with 9 years of experience across a broad spectrum of technologies including JavaScript, 
-            TypeScript, React, Angular, Vue.js, and Node.js. Expertise in backend frameworks like Laravel and Express.js, alongside 
-            solid proficiency in database systems such as MongoDB, MySQL, and PostgreSQL. Versatile in cloud platforms like 
-            AWS and Azure, and highly skilled in microservices architecture and containerization using Docker and Kubernetes. 
-            Adept in frontend development, implementing scalable UIs with React, Redux, and Tailwind, while also skilled in writing 
-            automated tests using Cypress, Jest, and Mocha. Experienced in CI/CD pipelines with Jenkins and Docker, following 
-            agile practices, SOLID principles, and leveraging tools like Jira and Trello. Knowledgeable in blockchain technologies 
-            such as Solidity, Web3.js, and Truffle, and driven by continuous learning and adapting to evolving industry trends. 
+           Turning complex challenges into fast, scalable, and secure web applications using React, Node.js, AWS, and more.<br/>
+           From frontend finesse with React, Angular, and Vue to backend strength in Node, .NET, and Laravel — I craft full-stack solutions with real impact.
           </motion.p>
 
           {/* btn */}

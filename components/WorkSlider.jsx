@@ -14,23 +14,23 @@ const workSlides = {
       images: [
         {
           title: "title",
-          path: "/thumb1.jpg",
-          link: "http://example.com",
+          path: "/thumb5.jpg",
+          link: "https://github.com/muhammad-ali-bright/vue-ts-graphql-chargetrip-api",
         },
         {
           title: "title",
-          path: "/thumb2.jpg",
-          link: "http://example.com",
+          path: "/thumb6.jpg",
+          link: "https://github.com/muhammad-ali-bright/nextjs-typescript-fastapi-python",
         },
         {
           title: "title",
-          path: "/thumb3.jpg",
-          link: "http://example.com",
+          path: "/thumb7.jpg",
+          link: "https://github.com/muhammad-ali-bright/cryptoket-v2",
         },
         {
           title: "title",
-          path: "/thumb4.jpg",
-          link: "http://example.com",
+          path: "/thumb8.jpg",
+          link: "https://github.com/muhammad-ali-bright/tmwsd_challenge",
         },
       ],
     },
@@ -38,26 +38,27 @@ const workSlides = {
       images: [
         {
           title: "title",
-          path: "/thumb4.jpg",
-          link: "http://example.com",
-        },
-        {
-          title: "title",
           path: "/thumb1.jpg",
-          link: "http://example.com",
+          link: "https://github.com/muhammad-ali-bright/fb",
         },
         {
           title: "title",
           path: "/thumb2.jpg",
-          link: "http://example.com",
+          link: "https://github.com/muhammad-ali-bright/ecommerce-4",
         },
         {
           title: "title",
           path: "/thumb3.jpg",
-          link: "http://example.com",
+          link: "https://github.com/muhammad-ali-bright/react-typescript-starterkit",
+        },
+        {
+          title: "title",
+          path: "/thumb4.jpg",
+          link: "https://github.com/muhammad-ali-bright/tmwsd_challenge",
         },
       ],
     },
+  
   ],
 };
 
