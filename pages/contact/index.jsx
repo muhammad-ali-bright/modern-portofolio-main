@@ -29,7 +29,7 @@ const Contact = () => {
   return (
     <div className="h-full bg-primary/30 relative">
       {/* Control Panel */}
-      <div className="absolute top-1/2 right-4 transform -translate-y-1/2 flex flex-col items-center space-y-4 bg-primary/50 p-6 rounded-lg shadow-lg w-[80px] h-[400px]">
+      {/* <div className="absolute top-1/2 right-4 transform -translate-y-1/2 flex flex-col items-center space-y-4 bg-primary/50 p-6 rounded-lg shadow-lg w-[80px] h-[400px]">
         <a href="#home" className="text-accent text-2xl">
           <i className="fas fa-home"></i>
         </a>
@@ -42,9 +42,9 @@ const Contact = () => {
         <a href="#contact" className="text-accent text-2xl">
           <i className="fas fa-envelope"></i>
         </a>
-      </div>
+      </div> */}
 
-      <div className="container mx-auto py-32 flex flex-col xl:flex-row items-center justify-center h-full">
+      <div className="container mx-auto pt-56 md:pt-32 flex flex-col xl:flex-row items-center justify-center h-full">
         {/* Contact Details */}
         <div className="flex flex-col items-center xl:items-start mb-12 xl:mb-0 xl:mr-16">
           <h2 className="text-2xl font-bold mb-6">Contact</h2>
@@ -157,7 +157,7 @@ const Contact = () => {
             </div>
             <button
               type="submit"
-              className="btn rounded-full border border-white/50 max-w-[170px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent group"
+              className="btn rounded-full border border-white/50 max-w-[170px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent group mb-28 lg:mb-0"
               disabled={isLoading}
               aria-disabled={isLoading}
             >
