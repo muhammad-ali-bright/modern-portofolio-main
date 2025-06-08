@@ -10,24 +10,24 @@ import "swiper/css/pagination";
 const testimonialData = [
   {
     image: "/t-avt-1.png",
-    name: "Anne Smith",
-    position: "Customer",
+    name: "Jessica",
+    position: "Director of Engineering",
     message:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!",
+      "Muhammad consistently delivered production-ready full-stack features with modern frameworks like React, .NET, and AWS. His attention to performance, clean code, and ability to work across the entire stack made him a key contributor to our engineering team.",
   },
   {
     image: "/t-avt-2.png",
-    name: "Jane Doe",
-    position: "Customer",
+    name: "Maria",
+    position: "Technical Project Lead",
     message:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!",
+      "Muhammad brought a strong frontend mindset to our team, delivering high-quality UI with React, Angular, and Vue. He improved performance, reduced page load times, and always ensured responsive, cross-browser-ready interfaces. A reliable and detail-oriented engineer.",
   },
   {
     image: "/t-avt-3.png",
-    name: "Jhon Doe",
-    position: "Customer",
+    name: "Sunnova",
+    position: "Frontend Team Lead",
     message:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!",
+      "Working with Muhammad was a great experience. He built scalable full-stack apps using React, Node.js, and AWS, and always followed best practices with CI/CD and secure authentication. His ability to lead features end-to-end really pushed our projects forward.",
   },
 ];
 
