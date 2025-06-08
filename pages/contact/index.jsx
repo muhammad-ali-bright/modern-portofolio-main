@@ -80,7 +80,7 @@ const Contact = () => {
             <a href="https://github.com/muhammad-ali-bright" className="text-accent">
               <FaGithub className="text-2xl" />
             </a>
-            <a href="https://www.linkedin.com/in/muhammad-ali-2ab68b354" className="text-accent">
+            <a href="" className="text-accent">
               <FaLinkedin className="text-2xl" />
             </a>
           </div>
