@@ -53,12 +53,59 @@ const workSlides = {
         },
         {
           title: "title",
+          path: "/hotel-booking.jpeg",
+          link: "https://github.com/muhammad-ali-bright/hotel-booking-app",
+        },
+      ],
+    },
+    {
+      images: [
+        {
+          title: "title",
+          path: "/betting.jpeg",
+          link: "https://github.com/muhammad-ali-bright/betting-app",
+        },
+        {
+          title: "title",
+          path: "/canva.png",
+          link: "https://github.com/muhammad-ali-bright/canva-next",
+        },
+        {
+          title: "title",
+          path: "/coinnow.png",
+          link: "https://github.com/muhammad-ali-bright/coinnow",
+        },
+        {
+          title: "title",
+          path: "/full-stack-pro.jpeg",
+          link: "https://github.com/muhammad-ali-bright/fullstack-pro-",
+        },
+      ],
+    },
+    {
+      images: [
+        {
+          title: "title",
+          path: "/hotel-admin.jpeg",
+          link: "https://github.com/muhammad-ali-bright/hotel-booking-admin",
+        },
+        {
+          title: "title",
+          path: "/rapido.png",
+          link: "https://github.com/muhammad-ali-bright/Rapido-main",
+        },
+        {
+          title: "title",
+          path: "/react-landing-page-template.jpg",
+          link: "https://github.com/muhammad-ali-bright/startup-landing",
+        },
+        {
+          title: "title",
           path: "/thumb4.jpg",
           link: "https://github.com/muhammad-ali-bright/tmwsd_challenge",
         },
       ],
     },
-  
   ],
 };
 

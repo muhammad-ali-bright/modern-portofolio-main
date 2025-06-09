@@ -1,29 +1,40 @@
 import { motion } from "framer-motion";
 import { BsArrowRight } from "react-icons/bs";
 import { fadeIn } from "../../variants";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { MdEmail, MdLocationOn } from "react-icons/md";
 import { BsTelephoneFill } from "react-icons/bs";
 import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
-
+import emailjs from "emailjs-com";
 const Contact = () => {
   const [isLoading, setIsLoading] = useState(false);
-
+  const form = useRef();
   const handleSubmit = (event) => {
     event.preventDefault();
     setIsLoading(true);
-
-    const myForm = event.target;
-    const formData = new FormData(myForm);
-
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: new URLSearchParams(formData).toString(),
-    })
-      .then(() => alert("Thank you. I will get back to you ASAP."))
-      .catch((error) => console.log(error))
-      .finally(() => setIsLoading(false));
+    form.current.message.value += `\n${form.current.email.value}`;
+    emailjs
+      .sendForm(
+        "service_22alsqj",
+        "template_o5tc7nt",
+        form.current,
+        "oMuyncLZQrwfJyz9U"
+      )
+      .then(
+        (result) => {
+          console.log("Email sent successfully:", result.text);
+          setIsLoading(false);
+          myForm.reset();
+          alert("Your message has been sent successfully!");
+        },
+        (error) => {
+          console.error("Error sending email:", error.text);
+          setIsLoading(false);
+          alert(
+            "There was an error sending your message. Please try again later."
+          );
+        }
+      );
   };
 
   return (
@@ -52,7 +63,10 @@ const Contact = () => {
             <li className="flex items-center gap-2">
               <MdEmail className="text-accent text-xl" />
               <span className="font-semibold">Mail:</span>
-              <a href="mailto:muhammad.ali.bright@gmail.com" className="text-accent">
+              <a
+                href="mailto:muhammad.ali.bright@gmail.com"
+                className="text-accent"
+              >
                 muhammad.ali.bright@gmail.com
               </a>
             </li>
@@ -77,7 +91,10 @@ const Contact = () => {
             </li>
           </ul>
           <div className="flex space-x-4 mt-6">
-            <a href="https://github.com/muhammad-ali-bright" className="text-accent">
+            <a
+              href="https://github.com/muhammad-ali-bright"
+              className="text-accent"
+            >
               <FaGithub className="text-2xl" />
             </a>
             <a href="" className="text-accent">
@@ -99,6 +116,7 @@ const Contact = () => {
           </motion.h2>
 
           <motion.form
+            ref={form}
             variants={fadeIn("up", 0.4)}
             initial="hidden"
             animate="show"
