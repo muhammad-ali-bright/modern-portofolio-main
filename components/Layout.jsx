@@ -22,7 +22,7 @@ const Layout = ({ children }) => {
         <title>Muhammad Ali | Portfolio</title>
         <meta
           name="description"
-          content="Ethan Smith is a Full-stack web developer with 10+ years of experience."
+          content="Muhammad Ali is a Senior software engineer developer with 9 years of experience."
         />
         <meta
           name="keywords"
