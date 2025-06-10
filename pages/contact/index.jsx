@@ -12,19 +12,19 @@ const Contact = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     setIsLoading(true);
-    form.current.message.value += `\n${form.current.email.value}`;
+    form.current.message.value += `\n\nSent from: ${form.current.email.value}`;
     emailjs
       .sendForm(
-        "service_22alsqj",
-        "template_o5tc7nt",
+        "service_9575meo",
+        "template_8yd22vi",
         form.current,
-        "oMuyncLZQrwfJyz9U"
+        "PszgDL-bpi7OddJUB"
       )
       .then(
         (result) => {
           console.log("Email sent successfully:", result.text);
           setIsLoading(false);
-          myForm.reset();
+          form.current.reset();
           alert("Your message has been sent successfully!");
         },
         (error) => {
